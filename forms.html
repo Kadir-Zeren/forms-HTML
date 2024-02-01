@@ -7,10 +7,57 @@
   </head>
   <body>
     <h1>forms</h1>
-    <form action="" method="post ">
+    <form action="result.html" method="get">
       <section id="name">
         <label for="isim">isim</label><br />
-        <input type="text" id="isim" />
+        <input
+          type="text"
+          id="isim"
+          placeholder="Adinizi giriniz"
+          name="isim"
+          required
+        />
+        <br /><br />
+
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="mail giriniz"
+          required
+        />
+        <br /><br />
+        <label for="pass">Password</label><br />
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          placeholder="en az 8 karakter giriniz"
+          required
+        />
+        <br /><br />
+        <label for="age">Age </label>
+        <br />
+        <input
+          type="number"
+          name="age"
+          id="age"
+          min="0"
+          max="160"
+          placeholder="yasinizi giriniz"
+        />
+        <br /><br />
+        <label for="gender">Gender</label><br />
+        <label for="erkek">Erkek</label>
+        <input type="radio" id="erkek" name="gender" value="erkek" />
+        <label for="kadın">Kadın</label>
+        <input type="radio" id="kadın" name="gender" value="Kadın" />
+      </section>
+
+      <section id="buttons">
+        <input type="submit" value="Kaydet" />
+        <input type="reset" value="Sil" />
       </section>
     </form>
   </body>
