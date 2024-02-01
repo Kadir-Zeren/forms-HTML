@@ -53,8 +53,46 @@
         <input type="radio" id="erkek" name="gender" value="erkek" />
         <label for="kadın">Kadın</label>
         <input type="radio" id="kadın" name="gender" value="Kadın" />
+        <label for="none">None</label>
+        <input type="radio" id="none" checked name="gender" value="none" />
+        <br /><br /><br />
+        <label for="fav-cars">LUTFEN FAVORİ ARABALARINIZI SEÇİNİZ:</label><br />
+        <br />
+        <input type="checkbox" name="cars1" id="bmw" value="bmw" />
+        <label for="bmw">BMW</label>
+
+        <input type="checkbox" name="cars2" id="mercedes" value="mercedes" />
+        <label for="mercedes">mercedes</label>
+        <br /><br />
+        <label for="dob">Dogum tarihi</label><br /><br /><br />
+        <input type="date" name="dob" id="dob" min="1990-01-01" />
+      </section>
+      <br /><br />
+
+      <section>
+        <select name="tatli" id="tatli">
+          <optgroup label="şerbetli tatlılar ">
+            <option value="künefe">künefe</option>
+            <option value="sütlaç">sütlaç</option>
+          </optgroup>
+          <optgroup label="sütlü tatlılar">
+            <option value="havuç d">H. dilimi</option>
+            <option value="kazandibi">kazan dibi</option>
+          </optgroup>
+        </select>
       </section>
 
+      <section>
+        <label for="yorum "> yorumlarınızı giriniz </label><br />
+        <textarea
+          name="yorum"
+          id="yorum"
+          cols="30"
+          rows="10"
+          style="resize: none"
+          placeholder="en fazla 100 karakter giriniz"
+        ></textarea>
+      </section>
       <section id="buttons">
         <input type="submit" value="Kaydet" />
         <input type="reset" value="Sil" />
